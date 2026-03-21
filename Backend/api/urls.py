@@ -4,6 +4,7 @@ from django.urls import path
 
 from users import views as UserViews
 from products import views as ProductViews
+from cart import views as CartViews
 
 urlpatterns = [
     path('register/', UserViews.RegisterView.as_view()),
@@ -12,5 +13,7 @@ urlpatterns = [
     path('profile/', UserViews.ProfileView.as_view()),
 
     path('products/', ProductViews.ProductListView.as_view()),
-    path('products/<int:pk>/', ProductViews.ProductDetailView.as_view())
+    path('products/<int:pk>/', ProductViews.ProductDetailView.as_view()),
+
+    path('cart/', CartViews.CartView.as_view())
 ]
