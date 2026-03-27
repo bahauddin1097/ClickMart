@@ -3,7 +3,7 @@ from django.contrib import admin
 from .models import Product
 
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ['name', 'id', 'price', 'stock', 'is_active']
+    list_display = ['name', 'id', 'price', 'stock', 'tax_percent', 'is_active']
     ordering = ['name']
 
 
