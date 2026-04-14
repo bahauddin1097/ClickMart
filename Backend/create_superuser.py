@@ -7,7 +7,7 @@ django.setup()
 
 User = get_user_model()
 
-username = os.environ.get('SUPERUSER_USERNAME', 'mngr_sb97')
+username = os.environ.get('SUPERUSER_USERNAME', 'admin')
 email = os.environ.get('SUPERUSER_EMAIL', 'bahauddin@gmail.com')
 password = os.environ.get('SUPERUSER_PASSWORD')
 
